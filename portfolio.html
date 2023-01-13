@@ -20,46 +20,48 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="contener">
-        <div class="header-contener">
-          <nav class="nav-contener">
-            <a href="./index.html" class="logo logo-web"
-              ><span>Web</span><span class="logo-end">Studio</span>
+        <div class="header__contener">
+          <nav class="header__nav">
+            <a href="./index.html" class="logo logo__web"
+              ><span>Web</span><span class="logo__end">Studio</span>
             </a>
 
-            <ul class="header-menu">
+            <ul class="header__menu">
               <li>
-                <a class="main-links" href="./index.html">Студія</a>
+                <a class="header__links" href="./index.html">Студія</a>
               </li>
               <li>
-                <a class="main-links current" href="./portfolio.html"
+                <a
+                  class="header__links header__links--current"
+                  href="./portfolio.html"
                   >Портфоліо</a
                 >
               </li>
-              <li><a class="main-links" href="#">Контакти</a></li>
+              <li><a class="header__links" href="#">Контакти</a></li>
             </ul>
           </nav>
 
-          <ul class="heade-contact">
+          <ul class="header__contact">
             <li>
-              <a class="contact-links" href="mailto:info@devstudio.com">
-                <svg class="contact-links-icon" width="16" height="12">
+              <a class="header__contact-links" href="mailto:info@devstudio.com">
+                <svg class="header__contact-links-icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
-                info@devstudio.com</a
-              >
+                info@devstudio.com
+              </a>
             </li>
             <li>
-              <a class="contact-links" href="tel:+380961111111">
-                <svg class="contact-links-icon" width="10" height="16">
+              <a class="header__contact-links" href="tel:+380961111111">
+                <svg class="header__contact-links-icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone "></use>
                 </svg>
-                +38 096 111 11 11</a
-              >
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
         </div>
@@ -69,7 +71,7 @@
     <main>
       <section class="section">
         <div class="contener">
-          <h1 class="visually-hidden">Портфоліо</h1>
+          <h1 class="space-title visually--hidden">Портфоліо</h1>
           <ul class="portfolio-button">
             <li><button class="button" type="button">Усі</button></li>
             <li><button class="button" type="button">Веб-сайти</button></li>
@@ -78,11 +80,11 @@
             <li><button class="button" type="button">Маркетинг</button></li>
           </ul>
 
-          <ul class="title-list">
-            <li class="title-item">
-              <a href="#" class="title-link">
+          <ul class="porduct-title porduct-title__list">
+            <li class="porduct-title__item">
+              <a href="#" class="porduct-title__link">
                 <div class="description-contener">
-                  <div class="description-title">
+                  <div class="description-contener__info">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -97,16 +99,16 @@
                     height="294"
                   />
                 </div>
-                <div class="title-contener">
-                  <h3 class="title-project">Технокряк</h3>
-                  <p class="title-navigation">Веб-сайт</p>
+                <div class="porduct-title__contener">
+                  <h3 class="porduct-title__project">Технокряк</h3>
+                  <p class="porduct-title__navigation">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="title-item">
-              <a href="#" class="title-link">
+            <li class="porduct-title__item">
+              <a href="#" class="porduct-title__link">
                 <div class="description-contener">
-                  <div class="description-title">
+                  <div class="description-contener__info">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -121,18 +123,18 @@
                     height="294"
                   />
                 </div>
-                <div class="title-contener">
-                  <h3 class="title-project">
+                <div class="porduct-title__contener">
+                  <h3 class="porduct-title__project">
                     Постер New Orlean vs Golden Star
                   </h3>
-                  <p class="title-navigation">Дизайн</p>
+                  <p class="porduct-title__navigation">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="title-item">
-              <a href="#" class="title-link">
+            <li class="porduct-title__item">
+              <a href="#" class="porduct-title__link">
                 <div class="description-contener">
-                  <div class="description-title">
+                  <div class="description-contener__info">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -147,16 +149,16 @@
                     height="294"
                   />
                 </div>
-                <div class="title-contener">
-                  <h3 class="title-project">Ресторан Seafood</h3>
-                  <p class="title-navigation">Додаток</p>
+                <div class="porduct-title__contener">
+                  <h3 class="porduct-title__project">Ресторан Seafood</h3>
+                  <p class="porduct-title__navigation">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="title-item">
-              <a href="#" class="title-link">
+            <li class="porduct-title__item">
+              <a href="#" class="porduct-title__link">
                 <div class="description-contener">
-                  <div class="description-title">
+                  <div class="description-contener__info">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -171,16 +173,16 @@
                     height="294"
                   />
                 </div>
-                <div class="title-contener">
-                  <h3 class="title-project">Проєкт Prime</h3>
-                  <p class="title-navigation">Маркетинг</p>
+                <div class="porduct-title__contener">
+                  <h3 class="porduct-title__project">Проєкт Prime</h3>
+                  <p class="porduct-title__navigation">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="title-item">
-              <a href="#" class="title-link">
+            <li class="porduct-title__item">
+              <a href="#" class="porduct-title__link">
                 <div class="description-contener">
-                  <div class="description-title">
+                  <div class="description-contener__info">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -195,16 +197,16 @@
                     height="294"
                   />
                 </div>
-                <div class="title-contener">
-                  <h3 class="title-project">Проєкт Boxes</h3>
+                <div class="porduct-title__contener">
+                  <h3 class="porduct-title__project">Проєкт Boxes</h3>
                   <p>Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="title-item">
-              <a href="#" class="title-link">
+            <li class="porduct-title__item">
+              <a href="#" class="porduct-title__link">
                 <div class="description-contener">
-                  <div class="description-title">
+                  <div class="description-contener__info">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -219,16 +221,18 @@
                     height="294"
                   />
                 </div>
-                <div class="title-contener">
-                  <h3 class="title-project">Inspiration has no Borders</h3>
-                  <p class="title-navigation">Веб-сайт</p>
+                <div class="porduct-title__contener">
+                  <h3 class="porduct-title__project">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="porduct-title__navigation">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="title-item">
-              <a href="#" class="title-link">
+            <li class="porduct-title__item">
+              <a href="#" class="porduct-title__link">
                 <div class="description-contener">
-                  <div class="description-title">
+                  <div class="description-contener__info">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -243,16 +247,18 @@
                     height="294"
                   />
                 </div>
-                <div class="title-contener">
-                  <h3 class="title-project">Видання Limited Edition</h3>
-                  <p class="title-navigation">Дизайн</p>
+                <div class="porduct-title__contener">
+                  <h3 class="porduct-title__project">
+                    Видання Limited Edition
+                  </h3>
+                  <p class="porduct-title__navigation">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="title-item">
-              <a href="#" class="title-link">
+            <li class="porduct-title__item">
+              <a href="#" class="porduct-title__link">
                 <div class="description-contener">
-                  <div class="description-title">
+                  <div class="description-contener__info">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -267,16 +273,16 @@
                     height="294"
                   />
                 </div>
-                <div class="title-contener">
-                  <h3 class="title-project">Проєкт LAB</h3>
-                  <p class="title-navigation">Маркетинг</p>
+                <div class="porduct-title__contener">
+                  <h3 class="porduct-title__project">Проєкт LAB</h3>
+                  <p class="porduct-title__navigation">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="title-item">
-              <a href="#" class="title-link">
+            <li class="porduct-title__item">
+              <a href="#" class="porduct-title__link">
                 <div class="description-contener">
-                  <div class="description-title">
+                  <div class="description-contener__info">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -291,9 +297,9 @@
                     height="294"
                   />
                 </div>
-                <div class="title-contener">
-                  <h3 class="title-project">Growing Business</h3>
-                  <p class="title-navigation">Додаток</p>
+                <div class="porduct-title__contener">
+                  <h3 class="porduct-title__project">Growing Business</h3>
+                  <p class="porduct-title__navigation">Додаток</p>
                 </div>
               </a>
             </li>
@@ -304,60 +310,63 @@
 
     <footer class="context-section">
       <div class="contener footer-contener">
-        <div class="footer-address-contener">
-          <a href="./index.html" class="logo logo-web logo-footer"
-            ><span>Web</span><span class="logo-end">Studio</span>
+        <div class="footer-sosial">
+          <a href="./index.html" class="logo logo__web logo__footer"
+            ><span>Web</span
+            ><span class="context-section__logo-end logo__end">Studio</span>
           </a>
           <address>
-            <ul class="address-list">
-              <li class="address-item">
+            <ul class="footer-address__list">
+              <li class="footer-address__item">
                 <a
-                  class="contact-adress"
+                  class="footer-address__map"
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="address-item">
-                <a class="contact" href="mailto:info@devstudio.com"
+              <li class="footer-address__item">
+                <a
+                  class="footer-address__contact"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="address-item">
-                <a class="contact" href="tel:+380961111111"
+              <li class="footer-address__item">
+                <a class="footer-address__contact" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-sosial-contener">
+        <div class="footer-sosial footer-sosial__contener">
           <h3 class="footer-headline">приєднуйтесь</h3>
-          <ul class="footer-sosial-list">
-            <li class="footer-sosial-item">
-              <a href="#" class="footer-sosial-links">
+          <ul class="footer-sosial__list">
+            <li class="footer-sosial__item">
+              <a href="#" class="footer-sosial__links">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-sosial-item">
-              <a href="#" class="footer-sosial-links">
+            <li class="footer-sosial__item">
+              <a href="#" class="footer-sosial__links">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-sosial-item">
-              <a href="#" class="footer-sosial-links">
+            <li class="footer-sosial__item">
+              <a href="#" class="footer-sosial__links">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-sosial-item">
-              <a href="#" class="footer-sosial-links">
+            <li class="footer-sosial__item">
+              <a href="#" class="footer-sosial__links">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -367,10 +376,10 @@
         </div>
         <div class="footer-form-contener">
           <h3 class="footer-headline">Підпишіться на розсилку</h3>
-          <form autocomplete="on" class="form-footer">
-            <label for="sub-email" class="form-lable-footer"></label>
+          <form autocomplete="on" class="form-fiel__footer form-fiel">
+            <label for="sub-email" class="form-fiel__lable-footer"></label>
             <input
-              class="sub-email"
+              class="form-fiel__sub-email"
               type="email"
               name="sub-email"
               id="sub-email"
@@ -378,7 +387,7 @@
             />
             <button class="footer-buttom" type="submit">
               Підписатися
-              <svg class="footer-buttom-icon" width="24" height="24">
+              <svg class="footer-buttom__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>

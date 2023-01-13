@@ -1,0 +1,30 @@
+.benefits{
+    &__section {
+         padding-bottom: 0px;
+     }
+
+     &__list {
+        display: flex;
+        gap: 30px;
+    }
+    &__item {
+        flex-basis: calc((100% - 60px) / 4);
+    }
+    &__contener {
+        display: flex;
+        justify-content: center;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: var(--secondary-backgroun);
+    }
+    &__headline {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 1.152;
+        color: var(--title-color);
+    }
+}
+.space-title{
+    @include visually-hidden;
+}
