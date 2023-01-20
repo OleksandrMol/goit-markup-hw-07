@@ -31,7 +31,6 @@
             <a href="./index.html" class="logo logo__web"
               ><span>Web</span><span class="logo__end">Studio</span>
             </a>
-
             <ul class="header__menu">
               <li>
                 <a
@@ -46,7 +45,16 @@
               <li><a class="header__links" href="#">Контакти</a></li>
             </ul>
           </nav>
-
+          <button
+            class="header__burger js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            type="button"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
           <ul class="header__contact">
             <li>
               <a class="header__contact-links" href="mailto:info@devstudio.com">
@@ -89,7 +97,7 @@
           <ul class="benefits__list">
             <li class="benefits__item">
               <div class="benefits__contener">
-                <svg width="70" heigth="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -101,7 +109,7 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__contener">
-                <svg width="70" heigth="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -113,7 +121,7 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__contener">
-                <svg width="70" heigth="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -124,7 +132,7 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__contener">
-                <svg width="70" heigth="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -422,7 +430,7 @@
 
     <footer class="context-section">
       <div class="contener footer-contener">
-        <div class="footer-sosial">
+        <div class="footer-address">
           <a href="./index.html" class="logo logo__web logo__footer"
             ><span>Web</span
             ><span class="context-section__logo-end logo__end">Studio</span>
@@ -507,6 +515,54 @@
         </div>
       </div>
     </footer>
+
+    <div class="mob-mane js-menu-container" id="mobile-menu">
+      <div class="mob-mane__contener">
+        <button type="button" class="modal__close js-close-menu">
+          <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <ul class="mob-mane__nav">
+          <li>
+            <a class="mob-mane__links" href="./index.html">Студія</a>
+          </li>
+          <li>
+            <a class="mob-mane__links" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li><a class="mob-mane__links" href="#">Контакти</a></li>
+        </ul>
+        <ul class="mob-mane__contact">
+          <li>
+            <a
+              class="mob-mane__contact-links mob-mane__tel"
+              href="tel:+380961111111"
+            >
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li>
+            <a class="mob-mane__contact-links" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mob-mane__sosial">
+          <li class="mob-mane__item">
+            <a href="#" class="mob-mane__sosial-link">Instagram</a>
+          </li>
+          <li class="mob-mane__item">
+            <a href="#" class="mob-mane__sosial-link">Twitter</a>
+          </li>
+          <li class="mob-mane__item">
+            <a href="#" class="mob-mane__sosial-link">Facebook</a>
+          </li>
+          <li class="mob-mane__item">
+            <a href="#" class="mob-mane__sosial-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -604,5 +660,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -4,6 +4,7 @@
 
     &__contener {
             display: flex;
+            align-items: center;
             justify-content: space-between;
         }
     &__nav {
@@ -13,9 +14,14 @@
         gap: 93px;
     }
     &__menu {
-        display: flex;
-        gap: 50px;
-        padding-inline-start: 0;
+        display: none;
+
+        @media (min-width: 768px)  {
+            display: flex;
+            gap: 50px;
+            padding-inline-start: 0; 
+        }    
+       
     }
     &__links {
         display: block;
@@ -47,9 +53,21 @@
             }
     }
     &__contact {
-        display: flex;
-        justify-content: flex-end;
-        gap: 50px;
+        display: none;
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        @media (min-width:1200px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 50px;
+        }
     }
     &__contact-links {
         display: flex;
@@ -64,12 +82,28 @@
     &:hover,
     &:focus {
             color: var(--active-color);
-        }}
+        }
+        @media (min-width: 768px) {
+            padding: 0;
+        }
+    }
 
     &__contact-links-icon {
          fill: currentColor;
          margin-right: 10px;
             }
        
-    
+    &__burger{
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        fill: var(--title-color);
+        border: none;
+        background-color: inherit;
+
+        @media (min-width:768px) {
+            display: none;
+        }
+    }
 }

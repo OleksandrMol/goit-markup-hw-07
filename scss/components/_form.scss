@@ -73,6 +73,10 @@
     &__lable-checkbox {
         position: relative;
         padding-left: 23px;
+        @media (max-width:1200px) {
+             font-size: 12px;
+             line-height: 1.16;
+            }
     }
     &__input-checkbox {
         appearance: none;

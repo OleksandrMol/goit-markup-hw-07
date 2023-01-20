@@ -1,11 +1,18 @@
 .inform{
+    @media (max-width:1200px) {
+        display: none;
+    }
     &__title {
-            margin-bottom: 50px;
-            color: var(--title-color);
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 1.1719;
-            text-align: center;
+        margin-bottom: 50px;
+        color: var(--title-color);
+        font-size: 28px;
+        line-height: 1.1719;
+        font-weight: 700;
+        text-align: center;
+
+        @media (min-width:1200px) {
+          font-size: 36px;
+         }
     }
     &__list {
         display: flex;
